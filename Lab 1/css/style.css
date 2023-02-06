@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@keyframes bg-pulse{
+	0% {
+		background-color: #030105;
+	}
+	50% {
+		background-color: rgb(144, 0, 166);
+	}
+	100%{
+		background-color: #030105;
+	}
+}
+
+
+
+
+body{
+	font-family: monospace;
+	letter-spacing: 1px;
+	color: white;
+	font-size: 2.4vh;
+	background: #030105;
+	animation: bg-pulse 19s infinite;
+	transition-timing-function: linear;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.container{
+	height: 100vh;
+	background-color: rgba(144, 0, 166, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.input{
+	padding: 0.6vh 1.4vw;
+	border-radius: 5vw;
+	font-family: monospace;
+	width: 12vw;
+	color: white;
+	font-size: 2.4vh;
+	margin-bottom: 5.5vh;
+	border: none;
+	background-color: #650d94;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#requestAPI{
+	width: 19vh;
+	color: white;
+	padding: 0.6vh 1.4vw;
+	font-size: 2.4vh;
+	font-family: monospace;
+	margin-bottom: 5.5vh;
+	background-color: #650d94;
+	border: none;
+	cursor: pointer;
+	border-radius: 5vw;
+}
+
+.timetable > div{
+	width: 33vw;
+	border-bottom: 5px dotted white;
+}
