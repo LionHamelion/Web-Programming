@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+
+	font-family: monospace	letter-spacing: 1px;
+	color: white;
+	font-size: 2.4vh;
+	background: url("../assets/img/background.png") center no-repeat;
+	background-size: 192vh;
+	background-color: #4A4A4A;
+	transition-timing-function: linear;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.container{
+	height: 100vh;
+	background-color: rgba(144, 0, 166, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.input{
+	padding: 0.6vh 1.4vw;
+	margin: 0.1vh 0.4vw;
+	border-radius: 5vw;
+	font-family: monospace;
+	width: clamp(250px, 27.33%, 900px);
+	color: white;
+	font-size: 29px;
+	margin-bottom: 2.5vh;
+	border: none;
+	background-color: #4f0b52;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#requestAPI{
+	width: 19vh;
+	color: white;
+	padding: 0.6vh 1.4vw;
+	font-size: 29px;
+	font-family: monospace;
+	margin-bottom: 5.5vh;
+	background-color: #4f0b52;
+	border: none;
+	cursor: pointer;
+	border-radius: 5vw;
+}
+
+.timetable > div{
+	width: 80vw;
+	min-width: 380px;
+	max-width: 65vmin;
+	border-bottom: 5px dotted white;
+	font-size: 29px;
+}
+
+.inputs {
+	width: clamp(80vmin, 33.33%, 15vw);
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
