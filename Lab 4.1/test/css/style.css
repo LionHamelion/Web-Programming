@@ -1,0 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background: url("../assets/img/background.png") center no-repeat;
+	background-size: 192vh;
+	background-color: #4A4A4A;
+}
