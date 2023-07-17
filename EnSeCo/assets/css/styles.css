@@ -11,16 +11,11 @@ a {
   color: #38b4e5;
 }
 
-#about {
-  --bs-bg-opacity: 1;
-  background-color: #52319e;
-}
-
 #mainNav.navbar-shrink {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255,255,255,.3);
-  background: var(--bs-white);
+  /*background: var(--bs-white);*/
 }
 
 .masthead {
@@ -37,11 +32,143 @@ a {
 #mainNav {
   background-color: #ffffff;
 }
-/*
+
 #mainNav.navbar-toggler {
   font-size: 14px;
   padding: 11px;
   color: blue;
   border: 1px solid blue;
 }
+/*
+.nav-pills {
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #b1def0;
+}
 */
+/*
+.nav-link::after{
+	content:'';
+	opacity: 0;
+	transitition: all 0.2s;
+	height: 2px;
+	width: 100%;
+	background-color: greenyellow;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-link:hover::after{
+	opacity: 1;
+}
+*/
+
+.nav-link:hover{
+	color: #8b9ae7 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+     background-color: #d8ddf7;
+}
+/*
+@media (min-width: 992px)
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+*/
+@media (min-width: 992px) {
+#mainNav .nav-link.active {
+   outline: none;
+   background-color: #d8ddf7;
+}
+}
+
+@media (min-width: 1200px) 
+{
+#mainNav .nav-link.active {
+   outline: none;
+   background-color: #d8ddf7;
+}
+}
+
+#about p {
+	font-family: Arial;
+	
+}
+#services p {
+	font-family: Arial;
+	
+}
+
+#contact p {
+	font-family: Arial;
+	
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #007bff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #2990ff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#contact .social-links {
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #007bff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #007bff;
+}
+
+#contact .social-links a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.portfolio h1, p {
+  color:cornflowerblue;
+}
+
+.addr p {
+  color:cornflowerblue ;
+}
